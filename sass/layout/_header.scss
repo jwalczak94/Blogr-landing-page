@@ -1,0 +1,34 @@
+@use "../mixins" as m;
+
+.header {
+  border-bottom-left-radius: 100px;
+  background-image: url("./images/bg-pattern-intro-mobile.svg"), var(--gradient-header);
+  background-position: center, center;
+  background-size: auto, auto;
+  background-repeat: no-repeat;
+
+  padding: 3.5rem 0 9.75rem 0;
+
+  color: var(--white);
+
+  @include m.respond(phone) {
+    background-image: url("./images/bg-pattern-intro-desktop.svg"), var(--gradient-header);
+    padding-top: 4rem;
+  }
+
+  &__content {
+    @include m.main-content;
+    text-align: center;
+
+    p {
+      font-size: clamp(1.125rem, 1.061rem + 0.2725vw, 1.25rem);
+      line-height: 1.53;
+    }
+
+    &__btn-container {
+      @include m.flex-center(1rem, row);
+      justify-content: center;
+      margin-top: 3rem;
+    }
+  }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <img src="./images/logo.svg" alt="" aria-hidden="true" />
+        <nav class="nav-container" role="navigation">
+          <!-- HAMBURGER ICON -->
+          <button class="menu-button" aria-label="Open mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav id="menu" role="navigation">
+            <div class="nav__links">
+              <ul class="nav__links__container">
+                <li class="nav-list">
+                  <button class="nav__links__button link-line" id="button-1">Product</button>
+                  <ul class="nav__links__list" id="nav-list-1">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integrations</a></li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <button class="nav__links__button link-line">Company</button>
+                  <ul class="nav__links__list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <button class="nav__links__button link-line">Connect</button>
+                  <ul class="nav__links__list">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="nav__buttons-container">
+                <a href="#" class="nav__buttons-container__login link-line">Login</a>
+                <a href="#" class="nav__buttons-container__sign-up btn">Sign Up</a>
+              </div>
+            </div>
+          </nav>
+
+          <!-- <div class="nav__links"> -->
+          <!-- PRODUCT LIST -->
+          <!-- <div class="nav__links__container">
+              <button class="nav__links__button" id="nav-button-1">Product</button>
+              <ul class="nav__links__list" id="nav-list-1">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </div> -->
+
+          <!-- COMPANY LIST -->
+          <!-- <div class="nav__links__container">
+              <button class="nav__links__button" id="nav-button-2">Company</button>
+              <ul class="nav__links__list" id="nav-list-2">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div> -->
+
+          <!-- CONNECT LIST -->
+          <!-- <div class="nav__links__container">
+              <button class="nav__links__button" id="nav-button-3">Connect</button>
+              <ul class="nav__links__list" id="nav-list-3">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div> -->
+
+          <!-- <div class="nav__buttons-container">
+              <a href="#" class="nav__buttons-container__login">Login</a>
+              <a href="#" class="nav__buttons-container__sign-up btn">Sign Up</a>
+            </div>
+          </div> -->
+        </nav>
+      </div>
+
+      <div class="header__content">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="header__content__btn-container">
+          <a href="#" class="btn btn-primary">Start for free</a>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-section">
+        <h2>Designed for the future</h2>
+
+        <article class="article article-1">
+          <div class="article__content">
+            <div class="article__content-text">
+              <h3>Introducing an extensible editor</h3>
+              <p class="text-base">
+                Blogr features an exceedingly intuitive interface which lets you focus on one thing:
+                creating content. The editor supports management of multiple blogs and allows easy
+                manipulation of embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or change the looks of a
+                blog.
+              </p>
+            </div>
+
+            <div class="article__content-text">
+              <h3>Robust content management</h3>
+              <p class="text-base">
+                Flexible content management enables users to easily move through posts. Increase the
+                usability of your blog by adding customized categories, sections, format, or flow.
+                With this functionality, you’re in full control.
+              </p>
+            </div>
+          </div>
+
+          <picture class="article__img article-1__img">
+            <source media="(min-width:376px )" srcset="./images/illustration-editor-desktop.svg" />
+            <img src="./images/illustration-editor-mobile.svg" alt="" aria-hidden="true" />
+          </picture>
+        </article>
+
+        <article class="article-2">
+          <div class="article-container">
+            <img
+              src="./images/illustration-phones.svg"
+              alt=""
+              aria-hidden="true"
+              class="article__img article-2__img" />
+            <div class="article-2__content">
+              <h2>State of the Art Infrastructure</h2>
+              <p class="text-base">
+                With reliability and speed in mind, worldwide data centers provide the backbone for
+                ultra-fast connectivity. This ensures your site will load instantly, no matter where
+                your readers are, keeping your site competitive.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="article article-3">
+          <picture class="article__img article-3__img">
+            <source media="(min-width:376px )" srcset="./images/illustration-laptop-desktop.svg" />
+            <img src="./images/illustration-laptop-mobile.svg" alt="" aria-hidden="true" />
+          </picture>
+          <div class="article__content">
+            <div class="article__content-text">
+              <h3>Free, open, simple</h3>
+              <p class="text-base">
+                Blogr is a free and open source application backed by a large community of helpful
+                developers. It supports features such as code syntax highlighting, RSS feeds, social
+                media integration, third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to learn.
+              </p>
+            </div>
+
+            <div class="article__content-text">
+              <h3>Powerful tooling</h3>
+              <p class="text-base">
+                Batteries included. We built a simple and straightforward CLI tool that makes
+                customization and deployment a breeze, but capable of producing even the most
+                complicated sites.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="./images/logo.svg" alt="Blogr Logo" />
+        <div class="footer__links-container">
+          <ul class="footer__links">
+            <li class="footer__links__header">Product</li>
+            <li><a href="#" class="footer__links__link link-line">Overview</a></li>
+            <li><a href="#" class="footer__links__link link-line">Pricing</a></li>
+            <li><a href="#" class="footer__links__link link-line">Marketplace</a></li>
+            <li><a href="#" class="footer__links__link link-line">Features</a></li>
+            <li><a href="#" class="footer__links__link link-line">Integrations</a></li>
+          </ul>
+
+          <ul class="footer__links">
+            <li class="footer__links__header">Company</li>
+            <li><a href="#" class="footer__links__link link-line">About</a></li>
+            <li><a href="#" class="footer__links__link link-line">Team</a></li>
+            <li><a href="#" class="footer__links__link link-line">Blog</a></li>
+            <li><a href="#" class="footer__links__link link-line">Careers</a></li>
+          </ul>
+
+          <ul class="footer__links">
+            <li class="footer__links__header">Connect</li>
+            <li><a href="#" class="footer__links__link link-line">Contact</a></li>
+            <li><a href="#" class="footer__links__link link-line">Newsletter</a></li>
+            <li><a href="#" class="footer__links__link link-line">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

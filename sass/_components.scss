@@ -1,0 +1,55 @@
+@use "mixins" as m;
+
+.btn {
+  display: inline-block;
+  border-radius: 28px;
+
+  height: 48px;
+  width: 137px;
+  line-height: 48px;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  transition: 0.4s;
+
+  &-primary {
+    background-color: var(--white);
+    color: var(--cta-text);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--cta-hover);
+        color: var(--white);
+      }
+    }
+  }
+
+  &-secondary {
+    border: 1px solid var(--white);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--white);
+        color: var(--cta-text);
+      }
+    }
+  }
+}
+
+.link-line {
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: var(--white);
+    transition: all 0.3s;
+  }
+
+  @media (hover: hover) {
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

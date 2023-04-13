@@ -1,0 +1,22 @@
+:root {
+  --ff-primary: "Overpass", serif;
+  --ff-links: "Ubuntu", sans-serif;
+
+  --white: #ffffff;
+  --cta-text: hsl(356, 100%, 66%);
+  --cta-hover: hsl(355, 100%, 74%);
+
+  --btn-bg1: hsl(13, 100%, 72%);
+  --btn-bg2: hsl(353, 100%, 62%);
+
+  --headings-text: hsl(209, 48%, 24%);
+  --body-text: hsl(209, 12%, 34%);
+  --footer-text: hsl(240, 2%, 79%);
+  --footer-bg: hsl(240, 10%, 16%);
+  --nav-bg: hsla(237, 17%, 21%, 0.08);
+  --links-color: hsl(237, 17%, 21%);
+  --line-bg: hsla(0, 7%, 90%, 1);
+
+  --gradient-header: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  --gradiend-section: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+}
