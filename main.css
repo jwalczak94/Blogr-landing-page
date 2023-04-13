@@ -495,11 +495,11 @@ h3 {
     margin-top: 4.5rem;
   }
 }
-.main-section h2 {
+.main-section > h2 {
   margin-bottom: 2.375rem;
 }
-@media only screen and (min-width: 75rem) {
-  .main-section h2 {
+@media only screen and (min-width: 48rem) {
+  .main-section > h2 {
     position: absolute;
     top: 80px;
     left: 50%;
