@@ -11,9 +11,19 @@ const openNav = () => {
   document.querySelector("footer").classList.toggle("overflow");
 };
 
+const listArray = [...lists];
+
 btns.forEach((btn, n) => {
   btn.addEventListener("click", function () {
-    let activeList = [...lists][n];
+    let activeList = listArray[n];
+
+    listArray.forEach((list) => {
+      if (list !== activeList) {
+        list.classList.remove("active-list");
+        console.log(list);
+      }
+    });
+
     activeList.classList.toggle("active-list");
   });
 });
