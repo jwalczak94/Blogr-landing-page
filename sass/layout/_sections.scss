@@ -15,7 +15,7 @@
   > h2 {
     margin-bottom: 2.375rem;
 
-    @include m.respond(tab-port) {
+    @include m.respond(tab-land) {
       position: absolute;
       top: 80px;
       left: 50%;
