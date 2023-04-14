@@ -6,9 +6,14 @@ const menuMobile = document.querySelector(".menu-button"),
 const openNav = () => {
   nav.classList.toggle("active");
   menuMobile.classList.toggle("open");
+  document.querySelector("main").classList.toggle("hide-all");
+  document.querySelector("footer").classList.toggle("hide-all");
 
-  document.querySelector("main").classList.toggle("overflow");
-  document.querySelector("footer").classList.toggle("overflow");
+  if (menuMobile.contains !== "open") {
+    listArray.forEach((list) => {
+      list.classList.remove("active-list");
+    });
+  }
 };
 
 const listArray = [...lists];
@@ -20,7 +25,6 @@ btns.forEach((btn, n) => {
     listArray.forEach((list) => {
       if (list !== activeList) {
         list.classList.remove("active-list");
-        console.log(list);
       }
     });
 
