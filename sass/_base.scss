@@ -19,9 +19,8 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html,
-body {
-  height: 100%;
+html {
+  min-height: 100%;
 }
 /*
   Typographic tweaks!
@@ -32,6 +31,7 @@ body {
   line-height: 1.17;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeSpeed;
+  height: 100%;
 }
 /*
   6. Improve media defaults
@@ -68,14 +68,11 @@ a {
   transition: all ease 0.2s;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   color: var(--body-text);
   font-family: var(--ff-primary);
+
+  overflow-x: hidden;
 }
 
 .hidden {
