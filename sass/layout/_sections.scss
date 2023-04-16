@@ -14,10 +14,11 @@
 
   > h2 {
     margin-bottom: 2.375rem;
+    color: var(--headings-text);
 
     @include m.respond(tab-land) {
       position: absolute;
-      top: 80px;
+      top: 75px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -30,10 +31,6 @@
       flex-direction: row !important;
     }
 
-    @include m.respond(desktop) {
-      gap: 7.8125rem !important;
-    }
-
     &-1 {
       @include m.flex-center(2.875rem, column-reverse);
 
@@ -41,11 +38,17 @@
         position: relative;
       }
 
-      &__img {
-        @include m.respond(tab-port) {
-          margin-right: -10rem;
-        }
+      @include m.respond(desktop) {
+        gap: 5rem !important;
+      }
 
+      .article__content {
+        @include m.respond(desktop) {
+          padding-top: 2.5rem;
+        }
+      }
+
+      &__img {
         @include m.respond(tab-land) {
           img,
           source {
@@ -89,7 +92,7 @@
 
         @include m.respond(tab-port) {
           top: -70px;
-          left: 0;
+          left: -40px;
           transform: translateX(0);
         }
 
@@ -106,6 +109,10 @@
         @include m.respond(tab-port) {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include m.respond(desktop) {
+          gap: 2rem;
         }
       }
 
@@ -127,6 +134,10 @@
     &-3 {
       @include m.flex-center(2.875rem, column);
 
+      @include m.respond(desktop) {
+        gap: 2.55rem !important;
+      }
+
       &__img {
         @include m.respond(tab-port) {
           margin-left: -27.6rem;
@@ -146,7 +157,7 @@
       gap: 2.5rem;
 
       @include m.respond(tab-port) {
-        gap: 4.875rem;
+        gap: 4rem;
       }
     }
 

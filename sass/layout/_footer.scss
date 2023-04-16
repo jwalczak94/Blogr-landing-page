@@ -19,6 +19,10 @@
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    @include m.respond(desktop) {
+      gap: 11.5rem;
+    }
   }
 
   &__links-container {
@@ -38,12 +42,14 @@
 
   &__links {
     @include m.flex-center(0, column);
-    font-size: clamp(1.125rem, 1.221rem + -0.4087vw, 0.9375rem);
+    font-size: 1.125rem;
     font-family: var(--ff-links);
     line-height: 2.0625rem;
 
     @include m.respond(phone) {
       align-items: flex-start;
+      font-size: 0.9375rem;
+      flex-grow: 1;
     }
 
     &__header {
@@ -54,6 +60,7 @@
     &__link {
       max-width: max-content;
       display: inline-block;
+      opacity: 0.75;
     }
   }
 }

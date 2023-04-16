@@ -69,18 +69,11 @@ a {
 }
 
 body {
+  background-color: var(--bg-color);
   color: var(--body-text);
   font-family: var(--ff-primary);
 
   overflow-x: hidden;
-}
-
-.hidden {
-  display: block;
-}
-
-.overflow {
-  overflow: hidden;
 }
 
 .active {

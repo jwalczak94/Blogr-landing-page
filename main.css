@@ -71,17 +71,10 @@ a {
 }
 
 body {
+  background-color: var(--bg-color);
   color: var(--body-text);
   font-family: var(--ff-primary);
   overflow-x: hidden;
-}
-
-.hidden {
-  display: block;
-}
-
-.overflow {
-  overflow: hidden;
 }
 
 .active {
@@ -194,6 +187,7 @@ h3 {
   --nav-bg: hsla(237, 17%, 21%, 0.08);
   --links-color: hsl(237, 17%, 21%);
   --line-bg: hsla(0, 7%, 90%, 1);
+  --bg-color: #fafafa;
   --gradient-header: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
   --gradiend-section: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
 }
@@ -253,7 +247,7 @@ h3 {
   transform: translateX(120%);
   width: 87.2vw;
   font-weight: 600;
-  font-size: clamp(1.125rem, 1.2443rem - 0.5089vw, 1rem);
+  font-size: 1.125rem;
   line-height: 1.75rem;
   text-align: center;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
@@ -269,6 +263,7 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     color: var(--white);
+    font-size: 1rem;
   }
 }
 .nav__links__container {
@@ -322,7 +317,6 @@ h3 {
   align-items: stretch;
   background-color: var(--nav-bg);
   border-radius: 5px;
-  font-size: clamp(1rem, 1.0596rem - 0.2545vw, 0.9375rem);
   opacity: 0.75;
   margin-top: 1.5rem;
   padding: 1.25rem 0;
@@ -346,6 +340,7 @@ h3 {
   }
   .nav__links__list a {
     font-weight: 400;
+    font-size: clamp(1rem, 1.0596rem - 0.2545vw, 0.9375rem);
   }
 }
 @media only screen and (min-width: 48rem) and (hover: hover) {
@@ -442,8 +437,8 @@ h3 {
 .header {
   border-bottom-left-radius: 100px;
   background-image: url("./images/bg-pattern-intro-mobile.svg"), var(--gradient-header);
-  background-position: center, center;
-  background-size: auto, auto;
+  background-position: center left, center;
+  background-size: 150%, auto;
   background-repeat: no-repeat;
   padding: 3.5rem 0 9.75rem 0;
   color: var(--white);
@@ -497,11 +492,12 @@ h3 {
 }
 .main-section > h2 {
   margin-bottom: 2.375rem;
+  color: var(--headings-text);
 }
 @media only screen and (min-width: 75rem) {
   .main-section > h2 {
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -527,11 +523,6 @@ h3 {
     flex-direction: row !important;
   }
 }
-@media only screen and (min-width: 90rem) {
-  .main-section .article {
-    gap: 7.8125rem !important;
-  }
-}
 .main-section .article-1 {
   display: flex;
   flex-direction: column-reverse;
@@ -543,9 +534,14 @@ h3 {
     position: relative;
   }
 }
-@media only screen and (min-width: 48rem) {
-  .main-section .article-1__img {
-    margin-right: -10rem;
+@media only screen and (min-width: 90rem) {
+  .main-section .article-1 {
+    gap: 5rem !important;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .main-section .article-1 .article__content {
+    padding-top: 2.5rem;
   }
 }
 @media only screen and (min-width: 75rem) {
@@ -586,7 +582,7 @@ h3 {
 @media only screen and (min-width: 48rem) {
   .main-section .article-2__img {
     top: -70px;
-    left: 0;
+    left: -40px;
     transform: translateX(0);
   }
 }
@@ -618,6 +614,11 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media only screen and (min-width: 90rem) {
+  .main-section .article-2 .article-container {
+    gap: 2rem;
+  }
+}
 .main-section .article-2 .article-2__content {
   display: grid;
   gap: 0.625rem;
@@ -638,6 +639,11 @@ h3 {
   gap: 2.875rem;
   align-items: center;
 }
+@media only screen and (min-width: 90rem) {
+  .main-section .article-3 {
+    gap: 2.55rem !important;
+  }
+}
 @media only screen and (min-width: 48rem) {
   .main-section .article-3__img {
     margin-left: -27.6rem;
@@ -655,7 +661,7 @@ h3 {
 }
 @media only screen and (min-width: 48rem) {
   .main-section .article__content {
-    gap: 4.875rem;
+    gap: 4rem;
   }
 }
 .main-section .article__content-text {
@@ -712,6 +718,11 @@ h3 {
     align-items: flex-start;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .footer-content {
+    gap: 11.5rem;
+  }
+}
 .footer__links-container {
   display: flex;
   flex-direction: column;
@@ -736,13 +747,15 @@ h3 {
   flex-direction: column;
   gap: 0;
   align-items: center;
-  font-size: clamp(1.125rem, 1.221rem - 0.4087vw, 0.9375rem);
+  font-size: 1.125rem;
   font-family: var(--ff-links);
   line-height: 2.0625rem;
 }
 @media only screen and (min-width: 37.5rem) {
   .footer__links {
     align-items: flex-start;
+    font-size: 0.9375rem;
+    flex-grow: 1;
   }
 }
 .footer__links__header {
@@ -752,6 +765,7 @@ h3 {
 .footer__links__link {
   max-width: max-content;
   display: inline-block;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=main.css.map */
