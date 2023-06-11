@@ -70,11 +70,15 @@ a {
   transition: all ease 0.2s;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--body-text);
   font-family: var(--ff-primary);
-  overflow-x: hidden;
 }
 
 .active {
